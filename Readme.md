@@ -2,7 +2,9 @@ InfoNEAT framework to train deep models that performs SCA
 
 Instructions:
 
-1. For each dataset, run data_split_aeshd.py to create a balanced dataset of 10 folds. As an example,  AES_HD dataset is attacked using InfoNEAT. The AES_HD dataset and instructions can be found in https://github.com/AISyLab/AES_HD.
+1. Unzip the file InfoNEAT.zip
+
+2. For each dataset, run data_split_aeshd.py to create a balanced dataset of 10 folds. As an example,  AES_HD dataset is attacked using InfoNEAT. The AES_HD dataset and instructions can be found in https://github.com/AISyLab/AES_HD.
 
 2. Run ae_neat_one_vs_rest.py to train 256 submodels.
 
