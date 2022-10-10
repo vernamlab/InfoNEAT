@@ -10,10 +10,13 @@ Instructions:
 
 2. The file 'train.py' contains the code to train sub-models and stacked model for each dataset. Change lines 9-14 accordingly. If needed, set dataset_split = True (line 15) to create cross-folds of the dataset. Please save the .h5 dataset files for each of the dataset in the respective folder.
 
-Result (after running the file 'train.py')
+Result (after running the file 'train.py'):
+
 1. If dataset_split is set to True, then k-folds of the dataset will be created and saved under the datasets folder. (Currently num_of_folds is set to 5)
 
 2. 256 sub-models and a stacked model for a specific fold will be created and saved under the models folder. (Currently fold_num is set to 1).
+
+Note: the models/submodels folder contains all the submodels against the three datasets. The models/stacked_models folder contains stacked models for one fold for AES_HD and ASCAD_fixed key datasets. This folder also contains the stacked models for the ASCAD_variable key dataset (no cross-validation was performed for the ASCAD_variable key dataset).
 
 ###################################################
 Note: modifications to the original neat code can be found in the folder 'neat'. Especially the code to train a submodel using batch sizes of data, training submodels for multiple classes or labels, and the inclusion of CMI criteria to train effective submodel)
