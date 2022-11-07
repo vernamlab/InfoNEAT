@@ -10,7 +10,8 @@ Python packages to install: scikit-learn, h5py, pickle, csv
 
 2. The folder contains a config folder which contains configuration parameters for the NEAT based algorithm for each dataset. The src folder contains all the source code to train sub-models, stacked models, and even split the dataset into different cross-validation folds.
 
-2. The file 'train.py' contains the code to train sub-models and stacked model for each dataset. Change lines 9-14 accordingly. If needed, set dataset_split = True (line 15) to create cross-folds of the dataset. Please save the .h5 dataset files for each of the dataset under the respective folders.
+3. The file 'train.py' contains the code to train sub-models and stacked model for each dataset. Change lines 9-14 accordingly. If needed, set dataset_split = True (line 15) to create cross-folds of the dataset. Please save the .h5 dataset files for each of the dataset under the respective folders.
+  
 </ul>
 
 <b>Result (after running the file 'train.py'):</b> <br>
