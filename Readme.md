@@ -6,6 +6,7 @@ Python packages to install: scikit-learn, h5py, pickle, csv
 
 <b>Instructions:</b> <br>
 <ul>
+
 1. Extract the files from the folder 'InfoNEAT'.
 
 2. The folder contains a config folder which contains configuration parameters for the NEAT based algorithm for each dataset. The src folder contains all the source code to train sub-models, stacked models, and even split the dataset into different cross-validation folds.
