@@ -6,25 +6,25 @@ from src.train_submodels import run
 import numpy as np
 
 if __name__ == '__main__':
-    datasets_location = '//datasets//'
+    datasets_location = 'datasets//'
     dataset_name = 'AES_HD' ## possible values are AES_HD, ASCAD_fixed, ASCAD_variable
     dataset_file_name = 'aes_hd.h5' ### possible values are aes_hd.h5, ASCAD.h5, ASCAD_desync50.h5, ASCAD_desync100.h5
-    submodels_location = '//models//submodels//' + dataset_name +'//'
-    stacked_models_location = '//models//stacked_models//' + dataset_name +'//'
+    submodels_location = 'models//submodels//' + dataset_name +'//'
+    stacked_models_location = 'models//stacked_models//' + dataset_name +'//'
     num_of_folds = 5
-    dataset_split = False
+    dataset_split = True
 
     ''''
     To create different cross-folds of the dataset, please set dataset_split = True
     '''
     if dataset_split == True:
-        in_file = h5py.File(dataset_name + "/"+dataset_file_name, "r")
+        in_file = h5py.File(datasets_location + dataset_name + "/"+dataset_file_name, "r")
         data_split(in_file, dataset_name, num_of_folds)
     #########################################
 
     num_class = 256
     batch_size = 100
-    config_name = 'config-'+dataset_name
+    config_name = 'config_'+dataset_name
     num_of_generations = 1
     fold_num = 1 ### vary this value to train submodels for k-fold cross-validation
 
