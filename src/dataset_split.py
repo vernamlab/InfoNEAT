@@ -112,17 +112,17 @@ def data_split(in_file, dataset_name, num_folds):
         train_X, test_X = X[train_ix], X[test_ix]
         train_y, test_y = y[train_ix], y[test_ix]
         train_md, test_md = md[train_ix], md[test_ix]
-        with open(dataset_name + '//train_X_normalized_' + str(i) + '.csv', 'w') as FOUT_train:
+        with open('datasets//'+dataset_name + '//train_X_normalized_' + str(i) + '.csv', 'w') as FOUT_train:
             np.savetxt(FOUT_train, train_X)
-        with open(dataset_name + '//train_X_for_stacked_normalized_' + str(i) + '.csv', 'w') as FOUT_test:
+        with open('datasets//'+dataset_name + '//train_X_for_stacked_normalized_' + str(i) + '.csv', 'w') as FOUT_test:
             np.savetxt(FOUT_test, test_X)
-        with open(dataset_name + '//train_y_normalized_' + str(i) + '.csv', 'w') as FOUT_trainy:
+        with open('datasets//'+dataset_name + '//train_y_normalized_' + str(i) + '.csv', 'w') as FOUT_trainy:
             np.savetxt(FOUT_trainy, train_y)
-        with open(dataset_name + '//train_y_for_stacked_normalized_' + str(i) + '.csv', 'w') as FOUT_testy:
+        with open('datasets//'+dataset_name + '//train_y_for_stacked_normalized_' + str(i) + '.csv', 'w') as FOUT_testy:
             np.savetxt(FOUT_testy, test_y)
-        with open(dataset_name + '//train_md_normalized_' + str(i) + '.txt', 'wb') as FOUT_trainmd:
+        with open('datasets//'+dataset_name + '//train_md_normalized_' + str(i) + '.txt', 'wb') as FOUT_trainmd:
             pickle.dump(train_md, FOUT_trainmd)
-        with open(dataset_name + '//train_md_for_stacked_normalized_' + str(i) + '.txt', 'wb') as FOUT_testmd:
+        with open('datasets//'+dataset_name + '//train_md_for_stacked_normalized_' + str(i) + '.txt', 'wb') as FOUT_testmd:
             pickle.dump(test_md, FOUT_testmd)
         print("Creating fold " + str(i) + " for " + dataset_name + " dataset.")
         i += 1
