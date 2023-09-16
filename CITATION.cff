@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: InfoNEAT
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Rabin
+    family-names: Acharya
+    email: rabin.acharya@ufl.edu
+    affiliation: University of Florida
+  - given-names: Fatemeh
+    family-names: Ganji
+    email: fganji@wpi.edu
+    affiliation: Worcester Polytechnic Institute
+  - given-names: Domenic
+    family-names: Forte
+    email: dforte@ece.ufl.edu
+    affiliation: University of Florida
+identifiers:
+  - type: url
+    value: 'https://doi.org/10.46586/tches.v2023.i1.401-437'
+    description: Link to the paper
+repository-code: 'https://github.com/vernamlab/InfoNEAT'
